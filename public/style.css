@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #006064;
+    margin: 20px 0;
+    font-size: 2.5em; /* Increased font size */
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow */
+    border-radius: 12px; /* Slightly more rounded corners */
+    padding: 25px; /* Increased padding */
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease; /* Added a transition effect */
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+/* Question style */
+.ques {
+    font-size: 1.4em; /* Increased font size */
+    margin-bottom: 20px;
+    color: #004d40;
+    text-align: center;
+}
+
+/* Options container style */
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap between options */
+    width: 100%;
+}
+
+/* Button style */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    padding: 12px; /* Slightly more padding */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    font-size: 1em;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Added button shadow */
+}
+
+button:focus {
+    background-color: #0056b3;
+}
+
+button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.next_btn {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+.marks_btn {
+    margin-top: 20px;
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+.next_btn:hover {
+    background-color: #218838;
+}
+
+.marks_btn:hover {
+    background-color: #fdd835;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%; /* Increased width */
+        margin: 10px;
+    }
+
+    .ques {
+        font-size: 1.2em; /* Adjusted font size */
+    }
+
+    button {
+        padding: 10px; /* Adjusted padding */
+        font-size: 0.95em; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Adjusted font size */
+    }
+
+    .ques {
+        font-size: 1.1em; /* Adjusted font size */
+    }
+
+    button {
+        padding: 8px; /* Adjusted padding */
+        font-size: 0.85em; /* Adjusted font size */
+    }
+}
